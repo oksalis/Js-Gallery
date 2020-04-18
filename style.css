@@ -1,0 +1,99 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700&subset=latin-ext");
+
+/* zde je magie a jednorožci, někdy i draci */
+:root {
+  --primary: #ffd700; /* rgb(255, 215, 0) */
+  --primary-active: #ffb400;
+  --bgdark: #09203f;
+  --bglight: #537895;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font: 18px/1.5 "Merriweather", serif;
+  background-image: linear-gradient(
+    to top,
+    var(--bgdark) 0%,
+    var(--bglight) 100%
+  );
+}
+
+h1 {
+  margin: 30px 0 20px 0;
+  font-size: 60px;
+  color: var(--primary);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.galerie {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.ramecek {
+  margin: 0 auto
+}
+
+.ramecek img {
+  width: auto;
+  height: 500px;
+  margin: 0 auto
+}
+
+.pocitadlo {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+
+.tlacitko {
+  height: auto;
+  width: 100px;
+  overflow: hidden;
+  padding: 1rem;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.tlacitko img {
+  height: 100px;
+  width: auto;
+  
+}
+
+.stripe {
+  height: 75px;
+  min-height: 75px;
+}
+
+.stripe-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0 auto;
+text-align: center;
+}
+
+.stripe-img {
+  height: 75px;
+  width: auto;
+  border: 5px solid transparent;
+}
+
+.stripe-img-active {
+  height: 75px;
+  width: auto;
+  border: 5px solid white;
+}
